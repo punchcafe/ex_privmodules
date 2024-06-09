@@ -1,4 +1,4 @@
-defmodule ExPrivModules do
+defmodule ExPrivModules.Validator do
   use GenServer
 
   require Logger
