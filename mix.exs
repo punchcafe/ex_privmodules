@@ -8,7 +8,8 @@ defmodule ExPrivmodules.MixProject do
       erlc_options: [:no_debug_info, {:i, ~c"myinclude"}],
       elixir: "~> 1.16",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      aliases: [compilep: ["run --no-compile --no-start priv/compile.exs"]]
     ]
   end
 
